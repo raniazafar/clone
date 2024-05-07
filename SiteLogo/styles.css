@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFDAB9; /* Peach background color */
+}
+
+header {
+    background-color: #FFDAB9;
+    color: white;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.content {
+    width: 1500px;
+    height: 1500px;
+    margin: auto;
+    color: palevioletred;
+    position: relative;
+}
+.content h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    padding-left: 10px;
+    margin-top: 8%;
+    letter-spacing: 2px;
+
+}
+.heading {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    color: black;
+    position: relative;
+
+}
+.heading h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    padding-left: 8px;
+    margin-top: 5%;
+    letter-spacing: 2px;
+
+}
+.row{
+    width: 20;
+    height: 30;
+    float: right;
+    align-self: flex-end;
+
+}
+.row column{
+    background-position: right;
+
+}
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.navbar {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFDAB9;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+}
+
+.content {
+    width: 100%; /* Change from fixed to flexible */
+    max-width: 1200px; /* Limit maximum width */
+    margin: auto;
+    color: palevioletred;
+    position: relative;
+    padding: 20px; /* Ensure proper padding */
+}
+
+.content h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem; /* Use relative font size */
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFDAB9; /* Peach background color */
+}
+
+/* Header */
+header {
+    background-color: #FFDAB9;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%; /* Adjust width for responsiveness */
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+/* Content */
+.content {
+    width: 100%; /* Flexible width */
+    max-width: 1200px; /* Limit maximum width */
+    margin: auto; /* Center content */
+    color: palevioletred;
+    position: relative;
+    padding: 20px; /* Padding for content */
+}
+
+/* Heading */
+.content h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem; /* Relative font size */
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+
+/* Navigation Bar */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: black; /* Change to ensure visibility */
+}
+
+.navbar {
+    flex: 1;
+    text-align: right; /* Align to the right */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Justify to the end */
+}
+
+.navbar ul li {
+    margin-right: 20px; /* Spacing between items */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* No underline */
+    color: black;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFDAB9;
+    color: black;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    /* Navbar adjustments for smaller screens */
+    .navbar {
+        display: none; /* Hide by default */
+        flex-direction: column; /* Vertical layout */
+        text-align: left;
+    }
+
+    .nav-toggle {
+        display: block; /* Show toggle on smaller screens */
+    }
+
+    .navbar.show {
+        display: flex; /* Show when toggle is clicked */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Vertical layout */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar ul li {
+        margin-right: 0; /* No margin for vertical layout */
+    }
+
+    /* Adjustments for content on smaller screens */
+    .content {
+        padding: 10px; /* Reduced padding */
+        font-size: 1rem; /* Smaller font size for readability */
+    }
+
+    .content h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+}
+
+
+
+   
+
